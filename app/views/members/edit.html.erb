@@ -1,0 +1,30 @@
+&nbsp;
+&emsp;
+
+<%= form_for @member do |f| %>
+
+<br>
+<br>
+
+  <p>
+  <%= f.label(:name, "名前") %>
+  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+  <%= f.text_field :name %>
+  </p>
+  <br>
+
+
+  <p>
+  <%= f.label :email, "メールアドレス" %>
+  &emsp;&emsp;
+  <%= f.text_field :email %>
+  </p>
+  <br>
+
+
+  <%= f.submit "登録" %>
+<% end %>
+
+
+
+<%= link_to "戻る", members_postmember_path %>
